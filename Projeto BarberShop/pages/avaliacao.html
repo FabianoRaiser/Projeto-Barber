@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Avaliação da Barbearia</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/formStyle.css" />
+  </head>
+  <body>
+    <section id="home" class="home">
+      <header class="header">
+        <nav class="nav">
+          <ul>
+            <li>
+              <img src="../images/logo.png" alt="Barber Shop" class="logo" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Formulário de Avaliação da Barbearia</h1>
+      <form>
+        <div class="short-ansewrs">
+
+            <fieldset>
+                <legend>Dados do Cliente (Opcional)</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" />
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+          <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" />
+        </div>
+    </fieldset>
+
+        <fieldset class="time">
+          <legend>Opções de Tempo de Espera</legend>
+          <label for="opcoes-espera">Opções:</label>
+          <select id="opcoes-espera" name="opcoes-espera">
+            <option value="muito-rapido">Muito rápido</option>
+            <option value="rapido">Rápido</option>
+            <option value="adequado">Adequado</option>
+            <option value="lento">Lento</option>
+            <option value="muito-lento">Muito lento</option></select
+            >
+        </fieldset>
+    </div>
+
+        <div class="long-ansewrs">
+          <fieldset>
+            <legend>Comentários</legend>
+            <div class="long-field">
+                <div>
+                    <label for="comentarios-corte"
+                    >Comentários sobre a qualidade do corte:</label
+                    >
+                    <textarea
+                    id="comentarios-corte"
+                    name="comentarios-corte"
+                    ></textarea
+                    >
+                </div>
+                <div>
+                    <label for="comentarios-barbeiro"
+                    >Comentários sobre o atendimento do barbeiro:</label
+                    >
+                    <textarea
+                    id="comentarios-barbeiro"
+                    name="comentarios-barbeiro"
+                    ></textarea
+                    >
+                </div>
+                <div>
+                    <label for="comentarios-positivos">O que mais gostou:</label>
+                    <textarea
+                    id="comentarios-positivos"
+                    name="comentarios-positivos"
+                    ></textarea
+                    >
+                </div>
+                <div>
+                    <label for="sugestoes">O que poderia ser melhorado:</label>
+                    <textarea id="sugestoes" name="sugestoes"></textarea>
+                </div>
+            </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Perguntas Abertas</legend>
+                <div class="long-field">
+                    <div>
+                        <label for="motivo-visita"
+                        >Qual foi o motivo da sua visita hoje?</label
+                        >
+                        <input
+                        type="text"
+                        id="motivo-visita"
+                        name="motivo-visita"
+                        />
+                    </div>
+                    <div>
+                        <label for="servicos-anteriores">
+                            Você já havia utilizado nossos serviços anteriormente?
+                        </label>
+                        <select id="servicos-anteriores" name="servicos-anteriores">
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                        </div>
+                        <div>
+                            <label for="como-conheceu">
+                            Como você conheceu a nossa barbearia?
+                            </label>
+                            <input
+                            type="text"
+                            id="como-conheceu"
+                            name="como-conheceu"
+                            />
+                        </div>
+                    </div>
+                </div>
+                    </fieldset>
+                
+                <fieldset>
+                    <legend>Perguntas Adicionais (Opcional)</legend>
+          <label for="servico-preferido"
+            >Qual foi o seu serviço preferido?</label
+          >
+          <input
+            type="text"
+            id="servico-preferido"
+            name="servico-preferido"
+          />
+          <label for="valor-gasto">Qual foi o valor total gasto?</label>
+          <input
+            type="number"
+            id="valor-gasto"
+            name="valor-gasto"
+            step="0.01"
+          />
+          <label for="frequencia-corte"
+            >Com que frequência você costuma cortar o cabelo?</label
+          >
+          <input
+            type="text"
+            id="frequencia-corte"
+            name="frequencia-corte"
+          />
+        </fieldset>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>

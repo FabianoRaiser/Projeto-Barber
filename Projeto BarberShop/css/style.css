@@ -221,6 +221,16 @@ body {
   background-color: var(--color-primary-light);
 }
 
+.services-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-img {
+  width: 145px;
+  align-self: center;
+}
+
 .services h2 {
   color: var(--color-secondary);
   font-weight: 400;
@@ -249,6 +259,26 @@ body {
   margin-top: 20px;
   font-size: 14px;
   line-height: 25px;
+}
+
+.rating-link {
+  width: 200px;
+  align-self: center;
+}
+
+.rating-link a {
+  text-decoration: none;
+  color: #191919;
+  cursor: pointer;
+}
+
+.rating-link:hover {
+  background-color: #3c2915;
+
+  a {
+    color: #f5eee6;
+    font-weight: 700;
+  }
 }
 
 

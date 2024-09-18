@@ -1,0 +1,45 @@
+.home {
+    color: white;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 24px;
+}
+
+fieldset {
+    display: inline-flex;
+    gap: 24px;
+    justify-content: center;
+    background-color: #917758;
+    padding: 16px;
+    max-width: 50%;
+}
+
+fieldset legend {
+    font-weight: 700;
+    padding: 8px 16px;
+    background-color: #917758;
+    border-top: 1px solid white;
+}
+
+.short-ansewrs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.long-ansewrs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.long-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+     width: 200px;
+}
